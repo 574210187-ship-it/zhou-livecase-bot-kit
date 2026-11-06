@@ -31,7 +31,7 @@
 
 ## Milestone 4 — Public release and GitHub readback
 
-- State: active
+- State: done
 - Goal: build scanned ZIP, publish public repository, pin commit/tag and verify download contents.
 - Exit criteria: GitHub visibility public, fixed commit/tag, release ZIP SHA/CRC, repository and release download readback.
 - Dependencies: Milestones 1–3.
@@ -39,7 +39,7 @@
 
 ## Milestone 5 — External Bot canary
 
-- State: pending
+- State: active
 - Goal: give Grok and Muse the same startup command; each runs A and B capability tests without production writes, then selects the faster valid route.
 - Exit criteria: both return preflight, path metrics, zero-write test receipt and exact missing authorization list; production remains blocked until user grants table/COS access.
 - Dependencies: Milestone 4 and user-side Bot access.

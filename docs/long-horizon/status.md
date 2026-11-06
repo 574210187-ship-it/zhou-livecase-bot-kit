@@ -2,7 +2,7 @@
 
 ## Current Milestone
 
-- Milestone 4 — Public release and GitHub readback (`active`)
+- Milestone 5 — External Bot canary (`active`)
 
 ## Escalation Level
 
@@ -10,14 +10,14 @@
 
 ## Current Slice
 
-- Publish the scanned v0.6.0 source and release ZIP to a new public repository, then read them back.
+- Hand the same fixed public startup protocol to Grok and Muse; each must test both routes and return zero-write/canary evidence.
 
 ## Latest Evidence
 
 - v0.6.0 implements capability preflight, route selection, human-readable payload validation, delegated-chat cleanup validation and route comparison.
 - Sanitized transcript/deep rule packs were rebuilt; old private rule ZIPs were rejected because they contained real target IDs and host paths.
-- 50/50 offline tests pass; release scan reports zero violations; release ZIP CRC passes.
-- Release ZIP SHA256: `0cdd1977109540e6155e618d4d6a3808b1e1708c9d90ad150ae6d7584dc7794f`.
+- Public repository `574210187-ship-it/zhou-livecase-bot-kit` was created with public visibility and populated through commit `c85622c6ca2f6206e4a82439c12fb9482b55bb20`.
+- Anonymous raw readback returned HTTP 200 for startup protocol, metadata, rule registry and release ZIP; ZIP CRC and declared SHA matched.
 
 ## Changed Files
 
@@ -33,11 +33,11 @@
 
 ## Blockers
 
-- None for local build. A new public GitHub repository still has to be created and populated before Milestone 4 can close.
+- Grok and Muse execution environments are outside this window. Their private table/COS authorizations and route canary receipts require the user to send the public startup instruction to each Bot.
 
 ## Next Action
 
-- Create `574210187-ship-it/zhou-livecase-bot-kit` as a clean public repository, upload the scanned tree and ZIP, then verify anonymous metadata/file reads.
+- Publish the final anonymous examples/rebuilt ZIP revision, then give the user one Grok instruction and one Muse instruction with fixed public links.
 
 ## Last Updated
 

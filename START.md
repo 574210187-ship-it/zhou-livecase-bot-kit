@@ -20,6 +20,14 @@ python3 release/verify_release.py --root .
 python3 release/build_release.py --output dist/zhou-livecase-bot-kit-v0.6.0.zip
 ```
 
+匿名 CLI 冒烟：
+
+```bash
+PYTHONPATH=src python3 -m zhou_livecase.external_bot_entrypoint validate-visible --input examples/visible_payload.json
+PYTHONPATH=src python3 -m zhou_livecase.external_bot_entrypoint validate-delegated --receipt examples/delegated_receipt.json
+PYTHONPATH=src python3 -m zhou_livecase.external_bot_entrypoint compare-routes --inline examples/route_inline.json --delegated examples/route_delegated.json
+```
+
 ## 私有生产入口
 
 自然语言指令只表达启动意图。私有宿主必须构造实时 `preflight.json`、全分页 `source_snapshot.json`，再调用：

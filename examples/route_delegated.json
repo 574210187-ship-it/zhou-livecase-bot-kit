@@ -1,0 +1,13 @@
+{
+  "schema": "zhou-route-metrics-v1",
+  "route": "delegated_chatgpt",
+  "records_attempted": 2,
+  "records_completed": 2,
+  "quality_gate_passed": true,
+  "independent_audit_passed": true,
+  "unverified_remote_writes": 0,
+  "cleanup_failures": 0,
+  "wall_seconds": 780,
+  "reported_tokens": 2800,
+  "retries": 0
+}
