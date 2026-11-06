@@ -16,8 +16,8 @@
 
 - v0.6.0 implements capability preflight, route selection, human-readable payload validation, delegated-chat cleanup validation and route comparison.
 - Sanitized transcript/deep rule packs were rebuilt; old private rule ZIPs were rejected because they contained real target IDs and host paths.
-- Public repository `574210187-ship-it/zhou-livecase-bot-kit` was created with public visibility and populated through commit `c85622c6ca2f6206e4a82439c12fb9482b55bb20`.
-- Anonymous raw readback returned HTTP 200 for startup protocol, metadata, rule registry and release ZIP; ZIP CRC and declared SHA matched.
+- Public repository `574210187-ship-it/zhou-livecase-bot-kit` was created with public visibility; the immutable `release-v0.6.0` branch is the canonical external-Bot entry.
+- Anonymous raw readback returned HTTP 200 for startup protocol, metadata, rule registry and release ZIP; ZIP CRC, member count and declared SHA matched.
 
 ## Changed Files
 
@@ -25,7 +25,7 @@
 - External CLI `src/zhou_livecase/external_bot_entrypoint.py`.
 - Public rule packs under `rules/public-v1.0/`.
 - Grok/Muse manuals and failure playbook under `docs/`.
-- 27 new/changed public files plus expanded regression tests.
+- Anonymous executable examples, fixed release links and 52 regression tests are included in the public package.
 
 ## Failed Checks
 
@@ -37,7 +37,7 @@
 
 ## Next Action
 
-- Publish the final anonymous examples/rebuilt ZIP revision, then give the user one Grok instruction and one Muse instruction with fixed public links.
+- User sends the fixed startup instruction to Grok and Muse; each returns preflight and equivalent A/B zero-write canary evidence before either receives private production authorization.
 
 ## Last Updated
 

@@ -3,8 +3,8 @@
 ## 公开入口
 
 - 仓库：<https://github.com/574210187-ship-it/zhou-livecase-bot-kit>
-- 本协议原文：<https://raw.githubusercontent.com/574210187-ship-it/zhou-livecase-bot-kit/main/docs/GROK_MUSE_START.md>
-- 发布 ZIP：<https://raw.githubusercontent.com/574210187-ship-it/zhou-livecase-bot-kit/main/dist/zhou-livecase-bot-kit-v0.6.0.zip>
+- 本协议原文：<https://raw.githubusercontent.com/574210187-ship-it/zhou-livecase-bot-kit/release-v0.6.0/docs/GROK_MUSE_START.md>
+- 发布 ZIP：<https://raw.githubusercontent.com/574210187-ship-it/zhou-livecase-bot-kit/release-v0.6.0/dist/zhou-livecase-bot-kit-v0.6.0.zip>
 - ZIP SHA：以仓库根目录 `PUBLIC_RELEASE.json` 的 `zip_sha256` 为准；不得相信聊天里手抄的 SHA。
 
 ## 用户给 Bot 的完整首次指令
@@ -17,7 +17,7 @@ BOT_NAME=<grok 或 muse>
 你负责独立执行“周意晨对标直播稿→案例→存储→案例库→案例匹配→源表收口”的完整生产流程。你的唯一结果不是报告、ZIP、队列或模型回复，而是每个可入库记录都取得存储、案例库、案例匹配和源表四方逐 ID 写后读回；无 accept、重复、需人工或权限阻塞的记录也必须写入真实终态和下一动作。
 
 一、取得并锁定公开程序
-1. 从 https://github.com/574210187-ship-it/zhou-livecase-bot-kit 下载 main，或下载 https://raw.githubusercontent.com/574210187-ship-it/zhou-livecase-bot-kit/main/dist/zhou-livecase-bot-kit-v0.6.0.zip 。
+1. 从 https://github.com/574210187-ship-it/zhou-livecase-bot-kit/tree/release-v0.6.0 下载固定发布分支，或下载 https://raw.githubusercontent.com/574210187-ship-it/zhou-livecase-bot-kit/release-v0.6.0/dist/zhou-livecase-bot-kit-v0.6.0.zip 。
 2. 读取 PUBLIC_RELEASE.json，核对 ZIP SHA 和逐文件清单；运行 release/verify_release.py 与全部 unittest。失败时停止写入并报告准确错误。
 3. 完整读取 START.md、docs/GROK_MUSE_START.md、docs/HUMAN_READABLE_FIELDS.md、docs/FAILURE_PLAYBOOK.md、docs/AUTHORIZATION_CHECKLIST.md、docs/PATH_A_SINGLE_WINDOW.md、docs/PATH_B_DELEGATED_CHATGPT.md。
 
