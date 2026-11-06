@@ -1,0 +1,14 @@
+{
+  "schema": "zhou-route-metrics-v1",
+  "route": "inline_single_window",
+  "records_attempted": 2,
+  "records_completed": 2,
+  "quality_gate_passed": true,
+  "independent_audit_passed": true,
+  "unverified_remote_writes": 0,
+  "cleanup_failures": 0,
+  "wall_seconds": 600,
+  "reported_tokens": null,
+  "retries": 0,
+  "notes": "reported_tokens 只有在宿主真实提供时填写，否则保持 null"
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "zhou-regression-manifest-v1",
+  "fixtures": [
+    "attachment_uri_must_not_be_treated_as_cos_key",
+    "q50_global_linkage_not_local_receipt_list",
+    "q50_minimal_row_is_not_complete",
+    "source_result_zip_must_match_source_identity",
+    "stale_queue_must_not_override_live_source_snapshot",
+    "analysis_plan_sha_must_match",
+    "storage_readback_sha_must_match",
+    "source_closeout_cannot_precede_q50",
+    "auditor_must_not_import_runner",
+    "report_or_http_success_is_not_completion",
+    "visible_cell_internal_code_is_forbidden",
+    "visible_cell_placeholder_is_forbidden",
+    "claim_numeric_fact_must_be_supported_by_quote",
+    "boundary_source_identity_must_match_snapshot",
+    "delegated_chat_requires_visible_cleanup_and_refresh_proof",
+    "failed_quality_route_cannot_win_speed_comparison"
+  ]
+}

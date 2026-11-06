@@ -1,0 +1,18 @@
+{
+  "schema": "zhou-bot-capability-profile-v1",
+  "provider": "muse",
+  "profile_id": "muse-production-candidate",
+  "capabilities": {
+    "filesystem_read_write": true,
+    "python_execution": true,
+    "live_source_pagination": false,
+    "private_runner_call": false,
+    "private_auditor_call": false,
+    "target_system_readback": false,
+    "structured_analysis": true,
+    "visible_browser_automation": false,
+    "chatgpt_file_upload": false,
+    "chatgpt_result_download": false,
+    "chatgpt_conversation_cleanup": false
+  }
+}

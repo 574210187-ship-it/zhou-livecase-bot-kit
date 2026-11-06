@@ -1,0 +1,23 @@
+{
+  "schema_version": "public-1.0",
+  "business_visible": [
+    "故事标题",
+    "故事概要",
+    "主方向",
+    "次方向",
+    "看事索引",
+    "单麦作用及依据",
+    "可借鉴元素",
+    "禁借元素"
+  ],
+  "runner_owned": [
+    "状态",
+    "来源编号",
+    "案例编号",
+    "存储路径",
+    "哈希",
+    "同步时间",
+    "远端记录ID"
+  ],
+  "rule": "AI may create business_visible values only; private runner derives runner_owned values from live write and readback evidence"
+}

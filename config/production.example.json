@@ -1,0 +1,27 @@
+{
+  "schema": "zhou-livecase-production-profile-v1",
+  "version": "0.1.0",
+  "feishu": {
+    "app_token_env": "ZHOU_FEISHU_APP_TOKEN",
+    "read_identity_env": "ZHOU_FEISHU_AUDITOR_IDENTITY",
+    "write_identity_env": "ZHOU_FEISHU_RUNNER_IDENTITY",
+    "tables": {
+      "source": "SET_IN_PRIVATE_ENVIRONMENT",
+      "case_library": "SET_IN_PRIVATE_ENVIRONMENT",
+      "q50": "SET_IN_PRIVATE_ENVIRONMENT"
+    }
+  },
+  "storage": {
+    "policy": "cos_required_or_feishu_attachment_per_record",
+    "cos": {
+      "region_env": "ZHOU_COS_REGION",
+      "bucket_env": "ZHOU_COS_BUCKET",
+      "prefix_env": "ZHOU_COS_PREFIX"
+    }
+  },
+  "reporting": {
+    "results_channel_env": "ZHOU_WECOM_01_WEBHOOK",
+    "faults_channel_env": "ZHOU_WECOM_05_WEBHOOK"
+  }
+}
+

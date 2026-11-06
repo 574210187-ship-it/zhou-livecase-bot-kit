@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "zhou-rework-order-v1",
+  "type": "object",
+  "required": ["schema", "run_id", "record_id", "generation", "restart_stage", "error_code", "evidence"],
+  "properties": {
+    "schema": {"const": "zhou-rework-order-v1"},
+    "run_id": {"type": "string", "minLength": 1},
+    "record_id": {"type": "string", "minLength": 1},
+    "generation": {"type": "integer", "minimum": 0},
+    "restart_stage": {"enum": ["STORAGE", "CASE_WRITE", "Q50_WRITE", "SOURCE_CLOSEOUT"]},
+    "error_code": {"type": "string", "minLength": 1},
+    "evidence": {"type": "object"}
+  },
+  "additionalProperties": false
+}

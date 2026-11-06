@@ -1,0 +1,15 @@
+{
+  "schema": "zhou-public-rule-packs-v1",
+  "packs": [
+    {
+      "path": "dist/transcript_rule_pack_public_v1_0.zip",
+      "sha256": "4b6f93c7e46db9a3b7a4072b7abf216efc94ae88dccb0d965738346da78eea30",
+      "size": 4127
+    },
+    {
+      "path": "dist/deep_rule_pack_public_v1_0.zip",
+      "sha256": "526b5b1d3562d9f2240e8b0c544435ffc01affcc724fe656db3f4603d1b6abab",
+      "size": 4647
+    }
+  ]
+}

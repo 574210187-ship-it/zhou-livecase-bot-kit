@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "zhou-source-snapshot-v1",
+  "type": "object",
+  "required": ["schema", "run_id", "source_table", "captured_at", "page_sha256", "record_ids", "snapshot_sha256"],
+  "properties": {
+    "schema": {"const": "zhou-source-snapshot-v1"},
+    "run_id": {"type": "string", "minLength": 1},
+    "source_table": {"type": "string", "minLength": 1},
+    "captured_at": {"type": "string", "minLength": 1},
+    "page_sha256": {"type": "array", "minItems": 1, "items": {"type": "string", "pattern": "^[0-9a-f]{64}$"}},
+    "record_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "snapshot_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": "public-1.0",
+  "stage": "deep",
+  "required_paths": ["manifest.json", "rows.jsonl"],
+  "decisions": ["accept", "review", "reject"],
+  "visible_fields": [
+    "故事标题",
+    "故事概要",
+    "主方向",
+    "次方向",
+    "看事索引",
+    "单麦作用及依据",
+    "可借鉴元素",
+    "禁借元素"
+  ],
+  "evidence_roles": ["relationship", "event", "conflict", "response"],
+  "non_accept_cells_must_be_empty": true,
+  "accept_requires_exact_quotes": true,
+  "review_attestation_fields": ["status", "reviewer", "method", "source_digest"],
+  "forbidden_visible_content": [
+    "internal_status_code",
+    "machine_json_dump",
+    "storage_uri",
+    "placeholder",
+    "unsupported_fact"
+  ]
+}

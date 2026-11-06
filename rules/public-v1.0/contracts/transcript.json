@@ -1,0 +1,19 @@
+{
+  "schema_version": "public-1.0",
+  "stage": "transcript",
+  "required_paths": [
+    "manifest.json",
+    "source.txt",
+    "call_boundary_manifest.json"
+  ],
+  "per_boundary_paths": [
+    "calls/{boundary_id}.json"
+  ],
+  "allowed_speakers": ["主播", "麦手"],
+  "reject_below_cleaned_chars": 80,
+  "review_below_cleaned_chars": 180,
+  "segmentation_basis": "complete_consultation_lifecycle_not_fixed_character_chunks",
+  "source_span_policy": "exact_original_character_offsets",
+  "role_inference": "source_visible_discourse_function_with_basis_and_confidence",
+  "long_source_gate": "multiple entry and exit cues require multiple boundaries unless a verified whole-session reason is recorded"
+}
