@@ -2,12 +2,12 @@
   "schema": "zhou-public-release-v1",
   "name": "zhou-livecase-bot-kit",
   "version": "0.6.0",
-  "built_at": "2026-11-06T20:31:32+08:00",
+  "built_at": "2026-11-06T20:38:03+08:00",
   "repository": "https://github.com/574210187-ship-it/zhou-livecase-bot-kit",
   "release_zip": {
     "path": "dist/zhou-livecase-bot-kit-v0.6.0.zip",
-    "sha256": "cacc0c7f9a6f9eecd60e94463959776d99ec5b0dba7c8e613d537a16a57b1c31",
-    "size": 93774,
+    "sha256": "b315b53abd7b7db9244d2ec6425e8be1c121014feb5a9f6919a4df52cac26f02",
+    "size": 93850,
     "file_count": 77
   },
   "rule_pack_registry": {

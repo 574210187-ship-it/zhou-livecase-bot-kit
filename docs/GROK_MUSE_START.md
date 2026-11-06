@@ -5,7 +5,7 @@
 - 仓库：<https://github.com/574210187-ship-it/zhou-livecase-bot-kit>
 - 本协议原文：<https://raw.githubusercontent.com/574210187-ship-it/zhou-livecase-bot-kit/release-v0.6.0/docs/GROK_MUSE_START.md>
 - 发布 ZIP：<https://raw.githubusercontent.com/574210187-ship-it/zhou-livecase-bot-kit/release-v0.6.0/dist/zhou-livecase-bot-kit-v0.6.0.zip>
-- ZIP SHA：以仓库根目录 `PUBLIC_RELEASE.json` 的 `zip_sha256` 为准；不得相信聊天里手抄的 SHA。
+- ZIP SHA：以仓库根目录 `PUBLIC_RELEASE.json` 的 `release_zip.sha256` 为准；逐文件清单以 ZIP 内 `RELEASE_MANIFEST.json` 为准。不得相信聊天里手抄的 SHA。
 
 ## 用户给 Bot 的完整首次指令
 
@@ -18,7 +18,7 @@ BOT_NAME=<grok 或 muse>
 
 一、取得并锁定公开程序
 1. 从 https://github.com/574210187-ship-it/zhou-livecase-bot-kit/tree/release-v0.6.0 下载固定发布分支，或下载 https://raw.githubusercontent.com/574210187-ship-it/zhou-livecase-bot-kit/release-v0.6.0/dist/zhou-livecase-bot-kit-v0.6.0.zip 。
-2. 读取 PUBLIC_RELEASE.json，核对 ZIP SHA 和逐文件清单；运行 release/verify_release.py 与全部 unittest。失败时停止写入并报告准确错误。
+2. 读取 `PUBLIC_RELEASE.json`，用 `release_zip.sha256` 与 `release_zip.size` 核对下载包；解压前运行 CRC，解压后逐项核对包内 `RELEASE_MANIFEST.json`；再运行 `release/verify_release.py` 与全部 unittest。任一失败时停止写入并报告准确错误。
 3. 完整读取 START.md、docs/GROK_MUSE_START.md、docs/HUMAN_READABLE_FIELDS.md、docs/FAILURE_PLAYBOOK.md、docs/AUTHORIZATION_CHECKLIST.md、docs/PATH_A_SINGLE_WINDOW.md、docs/PATH_B_DELEGATED_CHATGPT.md。
 
 二、能力和权限预检
