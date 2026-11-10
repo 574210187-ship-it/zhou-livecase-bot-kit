@@ -1,0 +1,45 @@
+{
+  "schema": "zhou-livecase-workbuddy-web-acceptance-v1",
+  "preflight_must_prove": [
+    "fixed_package_integrity",
+    "source_full_pagination",
+    "runner_status_and_dry_run_zero_write",
+    "independent_auditor_existing_sample",
+    "cos_head_download_sha",
+    "model_structured_json",
+    "durable_lease"
+  ],
+  "canary_must_prove": [
+    "fresh_source_snapshot_candidate",
+    "single_active_lease",
+    "storage_readback",
+    "case_library_readback",
+    "q50_global_readback",
+    "source_closeout_readback",
+    "independent_auditor_pass"
+  ],
+  "field_guards": [
+    "natural_chinese_display_fields",
+    "verbatim_quotes",
+    "claim_quote_fact_support",
+    "speaker_uncertainty_narrowing",
+    "q50_complete_fields",
+    "no_internal_codes_or_json"
+  ],
+  "terminal_results": [
+    "verified_complete",
+    "verified_closed_no_accept",
+    "verified_duplicate",
+    "verified_needs_human",
+    "verified_source_evidence_missing"
+  ],
+  "forbidden_completion_evidence": [
+    "chat_response",
+    "zip_only",
+    "queue_only",
+    "single_table_write",
+    "request_success",
+    "unit_test_only",
+    "old_execution_receipt"
+  ]
+}
