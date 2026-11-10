@@ -1,0 +1,48 @@
+{
+  "schema": "zhou-workbuddy-web-takeover-v2",
+  "public_release": "release-v0.6.0",
+  "files": [
+    {
+      "path": "00_README.md",
+      "sha256": "348a19c1c22445f0c3e14c30d8a42d934d0382afc21404a0ff92575cb1d17db6",
+      "size": 722
+    },
+    {
+      "path": "01_WORKBUDDY_WEB_SINGLE_WINDOW_TAKEOVER.md",
+      "sha256": "b08d20abf5c3b0c5072098ed82c375f7a4d85edf2ea2107edccf91626c8c1604",
+      "size": 9374
+    },
+    {
+      "path": "02_RUNTIME_PROFILE.template.json",
+      "sha256": "ff5259ef9e990d6937676a8e9daa2a99de680c13835d5bbc75784645ec378f06",
+      "size": 1073
+    },
+    {
+      "path": "03_ACCEPTANCE_MATRIX.json",
+      "sha256": "49f6ff7292b24516c2ca0f1a05e4912f397df9ff0fdeecf13933feff0be3f9c7",
+      "size": 1148
+    },
+    {
+      "path": "04_SECURE_CONNECTIONS_AND_UPLOAD.md",
+      "sha256": "66281593b28043d4bd26f7980b16c5f094ea1f688c619248c5db84dfa6ebbc1b",
+      "size": 3905
+    },
+    {
+      "path": "05_WORKBUDDY_WEB_LAUNCHER.txt",
+      "sha256": "3e4ae5b8cba0778ba53e2c0621659baa94572b35ec9fbf4f2a57d8f43cb8aad9",
+      "size": 663
+    },
+    {
+      "path": "README.md",
+      "sha256": "9f9eee015ca6c99936ba42ce787eb71723633278d4f19f3ae55260cfb10aec93",
+      "size": 703
+    },
+    {
+      "path": "START_WORKBUDDY.md",
+      "sha256": "371fcbc7feeb6f5386e03cfa7402011f2ce6cbbb74e894718281a39c92b70882",
+      "size": 9490
+    }
+  ],
+  "no_secrets": true,
+  "notes": "Target identifiers are configuration identifiers, not credentials. Credentials are only configured in private WorkBuddy connections."
+}
