@@ -1,0 +1,30 @@
+{
+  "schema": "zhou-livecase-workbuddy-web-runtime-profile-v1",
+  "provider": "workbuddy_web",
+  "execution_mode": "inline_single_window",
+  "project": "对标录屏05对标案例库 周意晨直播系统",
+  "public_release": {
+    "branch": "release-v0.6.0",
+    "zip_sha256": "b315b53abd7b7db9244d2ec6425e8be1c121014feb5a9f6919a4df52cac26f02",
+    "zip_bytes": 93850
+  },
+  "target_system": {
+    "production_base": "YVDlbBcSCaJOYos30qPcOpADnMf",
+    "source_table": "tblNuLU3X29HGU2o",
+    "case_library_table": "tblfb6WgPk3Eo9LS",
+    "q50_table": "tbldGsx7xJYDtMLk",
+    "report_base": "MOJZbR6jTaq7HKsqsbXcvCYQnRf",
+    "report_table": "tbldUi7L7rpRVYTe"
+  },
+  "capabilities": {
+    "source_full_pagination": false,
+    "feishu_runner_write": false,
+    "independent_auditor_read": false,
+    "cos_writer_readback": false,
+    "cos_auditor_readback": false,
+    "model_structured_json": false,
+    "durable_lease": false,
+    "daily_schedule": false
+  },
+  "secrets": "Configure only through WorkBuddy private connection/settings. Never put values in this file."
+}
