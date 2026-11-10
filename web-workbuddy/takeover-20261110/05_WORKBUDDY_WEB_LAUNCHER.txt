@@ -1,0 +1,5 @@
+请从 GitHub 下载并完整执行本项目的 `START_WORKBUDDY.md`：
+
+https://raw.githubusercontent.com/574210187-ship-it/zhou-livecase-bot-kit/main/web-workbuddy/takeover-20261110/START_WORKBUDDY.md
+
+项目为“对标录屏05对标案例库 周意晨直播系统”。先按文档完成零写预检并读取私有连接状态；所有能力通过后，在同一执行链自动完成金丝雀、四方写后读回、独立审计、历史欠稿追平、汇报和唯一每日03:00任务。不要停在 READY，不要等待第二条继续指令。任何 API/COS 密钥只在本账号的私有连接设置中使用，绝不要求我把密钥粘贴到聊天里。
